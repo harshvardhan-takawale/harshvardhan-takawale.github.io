@@ -128,8 +128,14 @@
         <div class="portfolio-description">
           <h2>About the Project</h2>
           <p>
-            In this project, we explore the task of Android malware detection based on dynamic analysis of application activity sequences using deep learning techniques. We show that analyzing a sequence of the activities is informative for detecting malware, but that analyzing longer sequences does not necessarily lead to a more accurate model. In the real-world scenario, the number of malware is low compared to that of harmless applications. Our dataset has more than 180,000 samples, two-thirds of which are malware. This dataset is significantly larger than other datasets used in previous studies. We mimic real-world cases by randomly sampling a small portion of malware samples. Using the state-of-the-art model BERT, we show that it is possible to achieve desired malware detection performance with an extremely unbalanced dataset. We find that our BERT based model achieves an F1 score of 0.919 with just 0.5% of the examples being malware, which significantly outperforms current state-of-the-art approaches. The results validate the effectiveness of our proposed method in dealing with highly imbalanced datasets.
+            In the real-world scenario, the number of malware is low compared to that of harmless applications. In this project, we explored the task of Android malware detection on a highly imbalanced dataset. </p>
+          <p>  
+            The detection is based on dynamic analysis of API call sequences made to the OS using deep learning techniques. We show that analyzing a sequence of the activities is informative for detecting malware. Our dataset has more than 180,000 samples, two-thirds of which are malware. This dataset is significantly larger than other datasets used in previous studies. We mimic real-world cases by randomly sampling a small portion of malware samples. Using the state-of-the-art model BERT, we show that it is possible to achieve desired malware detection performance with an extremely unbalanced dataset. We find that our BERT based model achieves an F1 score of 0.919 with just 0.5% of the examples being malware, which significantly outperforms current supervised (logistic regression, deep neural networks, SVM, LSTM and decision trees) and unsupervised (clustering, autoencoders, DAGMM) methods. 
           </p>
+          <h2><u>Publication: </u></h2>
+          <p><b> Malware Detection on Highly Imbalanced Data through Sequence Modeling <a href="https://dl.acm.org/doi/10.1145/3338501.3357374">(link)</a> </b></p>
+          <p>Rajvardhan Oak, Min Du, David Yan, <b>Harshvardhan Takawale</b> and Idan Amit<br>
+        Proceedings of the 12th ACM Workshop on Artificial Intelligence and Security, Nov.  2019</p>
         </div>
       </div>
     </section><!-- End Portfolio Details Section -->
