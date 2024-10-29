@@ -200,6 +200,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  text-align: center;
 }
 #hero:before {
   content: "";
@@ -215,6 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  text-align: center;
 }
 #hero h1 {
   margin: 0 0 10px 0;
