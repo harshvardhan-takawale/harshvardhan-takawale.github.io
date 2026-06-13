@@ -1,0 +1,10 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+cv_pdf: Harshvardhan_Takawale_CV.pdf # path to your CV PDF file (in assets/pdf/)
+email: htakawal@umd.edu # your email address
+scholar_userid: 6DDpcO4AAAAJ # your Google Scholar ID
+linkedin_username: harshvardhan-t-9b5125142 # your LinkedIn username
+x_username: HarshTakawale # your X (Twitter) handle
+github_username: harshvardhan-takawale # your GitHub username
+rss_icon: true # comment this line to hide the RSS icon
