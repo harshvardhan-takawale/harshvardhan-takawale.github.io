@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>INFER: Learning Implicit Neural Frequency Response Fields for Confined Car Cabin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-2: #fafafa;
+      --panel: #f5f5f5;
+      --text: #1a1a1a;
+      --muted: #666666;
+      --line: #e0e0e0;
+      --accent: #000000;
+      --shadow: 0 2px 8px rgba(0,0,0,.08);
+      --radius: 8px;
+      --maxw: 900px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    
+    /* Navigation */
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      gap: 1.5rem;
+    }
+    .brand { 
+      font-weight: 800; 
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+    .nav-links { 
+      display: flex; 
+      gap: 2rem;
+      font-size: .95rem;
+      font-weight: 500;
+    }
+    .nav-links a {
+      transition: color .2s;
+      color: var(--muted);
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    
+    /* Hero */
+    .hero {
+      max-width: var(--maxw);
+      margin: 4rem auto 3rem;
+      padding: 0 1.5rem;
+    }
+    .title { 
+      font-size: 2.5rem; 
+      font-weight: 800; 
+      margin-bottom: .5rem;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .subtitle { 
+      color: var(--muted); 
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .links-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-top: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: .65rem 1.2rem;
+      background: transparent;
+      color: var(--accent);
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: .9rem;
+      transition: all .2s;
+      border: 2px solid var(--accent);
+    }
+    .btn:hover {
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+    
+    /* Sections */
+    .section {
+      max-width: var(--maxw);
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: .5rem;
+    }
+    
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 2rem;
+      line-height: 1.8;
+    }
+    .panel p { margin-bottom: 1rem; }
+    .panel p:last-child { margin-bottom: 0; }
+    
+    figure { margin: 0; }
+    figure img { 
+      width: 100%; 
+      border-radius: var(--radius); 
+      display: block;
+      border: 1px solid var(--line);
+    }
+    figcaption { 
+      margin-top: .75rem; 
+      color: var(--muted); 
+      font-size: .9rem; 
+      text-align: center;
+      line-height: 1.5;
+    }
+    
+    /* Code */
+    .code-container {
+      position: relative;
+      margin-top: 1rem;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #fafafa;
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .85rem;
+      line-height: 1.6;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      border: 1px solid var(--line);
+      background: var(--bg);
+      color: var(--text);
+      padding: .5rem .8rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: .85rem;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .copy-btn:hover {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+    
+    /* Footer */
+    .footer {
+      max-width: var(--maxw);
+      margin: 4rem auto 2rem;
+      padding: 1.5rem 1.5rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: .9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .title { font-size: 2rem; }
+      .nav-links { font-size: .85rem; gap: 1rem; }
+      .section-title { font-size: 1.5rem; }
+      .panel { padding: 1.5rem; }
+    }
+    
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">INFER</div>
+      <div class="nav-links">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#bibtex">Citation</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1 class="title">INFER: Learning Implicit Neural Frequency Response Fields for Confined Car Cabin</h1>
+    <div class="subtitle">Harshvardhan Takawale, Nirupam Roy, Phil Brown · ICML 2026</div>
+    
+    <div class="links-bar">
+      <a class="btn" href="https://arxiv.org/pdf/2510.07442" target="_blank" rel="noopener">Paper</a>
+      <!-- <a class="btn" href="https://drive.google.com/file/d/1JymhYEzi6Yst8xEskpbhs8iO07wIZsn8/view?usp=sharing" target="_blank" rel="noopener">Code and Dataset</a> -->
+    </div>
+  </header>
+
+  <!-- Abstract -->
+  <section id="abstract" class="section">
+    <h2 class="section-title">Abstract</h2>
+    <div class="panel">
+      <p>
+        Accurate modeling of spatial acoustics is critical for immersive and intelligible audio in confined, resonant environments such as car cabins. Current tuning methods are manual, hardware-intensive, and static, failing to account for frequency selective behaviors and dynamic changes like passenger presence or seat adjustments. To address this issue, we propose <strong>INFER</strong> (Implicit Neural Frequency Response fields), a frequency-domain neural framework that is jointly conditioned on source and receiver positions, orientations to directly learn complex-valued frequency response fields inside confined, resonant environments like car cabins.
+      </p>
+      <p>
+        We introduce three key innovations over current neural acoustic modeling methods: (1) novel end-to-end frequency-domain forward model that directly learns the frequency response field and frequency-specific attenuation in 3D space; (2) perceptual and hardware-aware spectral supervision that emphasizes critical auditory frequency bands and deemphasizes unstable crossover regions; and (3) a physics-based Kramers–Kronig consistency constraint that regularizes frequency-dependent attenuation and delay.
+      </p>
+      <p>
+        We evaluate our method over real-world data collected in multiple car cabins. Our approach significantly outperforms time- and hybrid-domain baselines on both simulated and real-world automotive datasets, cutting average magnitude and phase reconstruction errors by over 39% and 51%, respectively. INFER sets a new state-of-the-art for neural acoustic modeling in automotive spaces.
+      </p>
+    </div>
+  </section>
+
+  <!-- Method Overview -->
+  <section id="method" class="section">
+    <h2 class="section-title">Method Overview</h2>
+    <figure class="panel">
+      <img src="Images/Overview_figure_v3.png" alt="INFER method architecture showing frequency-domain forward modeling with TOF-based phase compensation, Kramers-Kronig consistent complex attenuation, and perceptual frequency weighting" />
+      <figcaption>
+        INFER's frequency-domain rendering pipeline. The model predicts complex frequency responses and attenuation fields at sampled voxels. TOF-based phase shifts and material-based absorption are accumulated along rays, producing the final frequency response with perceptual and hardware-aware spectral supervision.
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- Results -->
+  <section id="results" class="section">
+    <h2 class="section-title">Results</h2>
+    <figure class="panel">
+      <img src="Images/freq_comp_all1.pdf" alt="Spatial acoustic field reconstruction at multiple frequencies (180Hz to 2880Hz) showing magnitude and phase plots comparing ground truth with INFER predictions" />
+      <figcaption>
+        Qualitative results showing spatial acoustic field reconstruction across frequency bands. INFER accurately captures both magnitude and phase patterns from low-frequency standing waves (180 Hz) to complex high-frequency interference patterns (2880 Hz), demonstrating robust performance across the entire spectrum.
+      </figcaption>
+    </figure>
+    <!-- New subsection -->
+    <h3 style="margin-top:2rem; font-weight:800; letter-spacing:-0.01em;">Evaluation on Real World Room Scale Datasets</h3>
+    <figure class="panel" style="margin-top:1rem;">
+      <img src="Images/real_world_eval2.png" alt="Evaluation on real-world room-scale datasets for INFER" />
+      <figcaption>
+        Room-scale validation on real environments. The figure illustrates generalization beyond automotive cabins to larger, reverberant spaces.
+      </figcaption>
+    </figure>    
+  </section>
+
+  <!-- BibTeX -->
+  <section id="bibtex" class="section">
+    <h2 class="section-title">Citation</h2>
+    <div class="panel">
+      <div class="code-container">
+        <button class="copy-btn" onclick="copyBibtex()">Copy</button>
+        <pre id="bibtex">@inproceedings{takawale2026infer,
+  title     = {INFER: Learning Implicit Neural Frequency Response Fields for Confined Car Cabin},
+  author    = {Takawale, Harshvardhan and Roy, Nirupam and Brown, Phil},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2026}
+}</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Harshvardhan Takawale, Nirupam Roy, Phil Brown · ICML 2026</p>
+  </footer>
+
+  <script>
+    function copyBibtex() {
+      const text = document.getElementById('bibtex').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.querySelector('.copy-btn');
+        const original = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = original, 1500);
+      });
+    }
+  </script>
+</body>
+</html>
