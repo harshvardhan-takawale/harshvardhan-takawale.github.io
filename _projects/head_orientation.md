@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Speaker–Listener Head Orientation
+title: "Speaker–Listener Head Orientation"
 description: Tracking mutual head orientation by leveraging HRTF and voice directivity on headphones. ICASSP 2024.
 img: assets/img/icassp24.png
 importance: 2

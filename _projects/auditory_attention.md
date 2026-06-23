@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Auditory Attention on Earables
+title: "Auditory Attention on Earables"
 description: Detecting auditory attention from in-ear muscle contractions using commodity earbuds. ICASSP 2025.
 img: assets/img/icassp25.png
 importance: 1

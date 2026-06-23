@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Structure-Assisted Spectrum Sensing
+title: "Structure-Assisted Spectrum Sensing"
 description: Low-power acoustic event detection via structure-assisted spectrum sensing. CPS-IoT Week 2023.
 img: assets/img/lyra.png
 importance: 3

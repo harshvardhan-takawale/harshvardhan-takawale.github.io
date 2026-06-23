@@ -5,7 +5,7 @@ permalink: /projects/
 description: Selected research projects across spatial acoustics, wearable sensing, and mobile systems.
 nav: true
 nav_order: 3
-display_categories: [acoustics & rf sensing, wearable & mobile sensing, security & systems]
+display_categories: [acoustics & rf sensing, wearable & mobile sensing, systems & security]
 horizontal: false
 ---
 
