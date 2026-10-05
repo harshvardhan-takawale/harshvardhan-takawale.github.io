@@ -24,7 +24,7 @@ Advisor: Dr. Nirupam Roy
 
 ## Experience
 
-**Google DeepMind**, Cambridge &nbsp;·&nbsp; *Sep 2026 – present*
+**Google DeepMind**, Cambridge, MA, USA &nbsp;·&nbsp; *Sep 2026 – present*
 Student Researcher — Sound team
 
 **Dolby Laboratories**, San Francisco &nbsp;·&nbsp; *Jun 2025 – Aug 2025*

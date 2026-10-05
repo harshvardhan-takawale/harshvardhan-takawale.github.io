@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started as a **Student Researcher** with the Sound team at **Google DeepMind** (Cambridge).
+Started as a **Student Researcher** with the Sound team at **Google DeepMind** (Cambridge, MA, USA).
