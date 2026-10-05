@@ -24,6 +24,9 @@ Advisor: Dr. Nirupam Roy
 
 ## Experience
 
+**Google DeepMind**, Cambridge &nbsp;·&nbsp; *Sep 2026 – present*
+Student Researcher — Sound team
+
 **Dolby Laboratories**, San Francisco &nbsp;·&nbsp; *Jun 2025 – Aug 2025*
 Ph.D. Research Intern — Supervisor: Dr. Phil Brown
 - Modelling car-cabin acoustic frequency-response fields with implicit neural representations.
