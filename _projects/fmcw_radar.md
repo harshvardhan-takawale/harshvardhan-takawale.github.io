@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "Spectral Domain Reconstruction for FMCW Radars"
-description: Spectral-domain neural reconstruction for passband FMCW radars. Under submission.
+title: "Moray: Spectrally Parameterized Neural Inverse Reconstruction"
+description: Spectrally parameterized forward operators for coherent neural inverse reconstruction, demonstrated on 77 GHz mmWave radar. NeurIPS 2026.
 img: assets/img/multimodal.png
-importance: 5
+importance: 1
 category: acoustics & rf sensing
 
 ---

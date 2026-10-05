@@ -1,13 +1,16 @@
 ---
 ---
 
-@article{takawale2026fmcw,
+@inproceedings{takawale2026fmcw,
+  abbr         = {NeurIPS},
   bibtex_show  = {true},
-  title        = {Spectral Domain Neural Reconstruction for Passband FMCW Radars},
+  selected     = {true},
+  title        = {Spectrally Parameterized Neural Inverse Reconstruction},
   author       = {Takawale, Harshvardhan and Roy, Nirupam},
-  journal      = {Under Submission},
+  booktitle    = {Conference on Neural Information Processing Systems (NeurIPS)},
   year         = {2026},
-  preview      = {multimodal.png}
+  preview      = {multimodal.png},
+  abstract     = {In neural inverse reconstruction, the forward model is typically treated as a fixed simulator that maps a neural scene representation to measurements. This work studies how the parameterization of the forward operator itself shapes the optimization landscape of coherent inverse problems. We introduce Moray, a reconstruction framework built on spectrally parameterized forward operators that bypass conventional time-domain synthesis and instead evaluate measurements directly through closed-form spectral kernels. This parameterization induces a substantially shorter and better-conditioned differentiable graph compared to the time-domain approaches. We further introduce Phase-Coherent Manifold Parameterization, a scene representation that jointly learns scene reflectivity and a deformable surface manifold, allowing the reconstruction to adapt to geometric deviations from the assumed imaging plane and thereby reducing common artifacts in coherent reconstruction. We instantiate these ideas for 77 GHz radar imaging using real measurements from a synthetic-aperture mmWave system. Across multiple challenging scenes, Moray consistently improves reconstruction fidelity, suppresses background artifacts, and degrades more gracefully under data limitations. More broadly, the results suggest that, in neural inverse problems, exposing appropriate analytical structure of the sensing physics to the optimizer can be as important as the choice of neural representation itself.}
 }
 
 @inproceedings{cheng2026lite,
