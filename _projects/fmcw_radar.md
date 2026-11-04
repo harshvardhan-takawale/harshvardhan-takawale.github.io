@@ -5,5 +5,5 @@ description: Spectrally parameterized forward operators for coherent neural inve
 img: assets/img/multimodal.png
 importance: 1
 category: acoustics & rf sensing
-
+redirect: /Moray/
 ---
