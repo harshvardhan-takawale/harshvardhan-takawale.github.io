@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a fourth-year Computer Science PhD candidate at the [University of Maryland, College Park](https://www.cs.umd.edu/), advised by [Prof. Nirupam Roy](https://www.cs.umd.edu/~nirupam/) in the [iCoSMoS Lab](http://icosmos.cs.umd.edu/).
+I am a final-year Computer Science PhD candidate (on the job market) at the [University of Maryland, College Park](https://www.cs.umd.edu/), advised by [Prof. Nirupam Roy](https://www.cs.umd.edu/~nirupam/) in the [iCoSMoS Lab](http://icosmos.cs.umd.edu/).
 
 My research builds **physics-informed machine learning** systems for **spatial acoustics, RF sensing, and ambient computing** — enabling rich perception and inference on **wearable and low-power platforms** embedded in everyday objects and environments. I am interested in how resource-constrained, intermittently-powered systems can perceive gestures, micro-motions, directions, and physical context for environment-sensing and ubiquitous-healthcare applications.
 
